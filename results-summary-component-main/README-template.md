@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/csparks78/frontendDev/tree/main/results-summary-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://csparks78.github.io/frontendDev/results-summary-component-main/)
 
 ## My process
 
