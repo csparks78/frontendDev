@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Screenshots
 
-![](./assets/images/challenge.png)
-![](./assets/images/challenge-mobile.png)
+![](./assets/images/challenge.PNG)
+![](./assets/images/challenge-mobile.PNG)
 
 
 ### Links
