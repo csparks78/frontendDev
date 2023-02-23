@@ -50,7 +50,7 @@ Users should be able to:
 
 ### Continued development
 
-I think next time I'm going to try mobile first
+I think next time I'm going to try mobile first. The layout isn't quite right in mobile view.
 
 
 
