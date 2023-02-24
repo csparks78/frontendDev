@@ -39,7 +39,7 @@ The designs were created to the following widths:
 
 html {
     scroll-behavior: smooth;
-    position: relative;
+    position: relative;    width: fit-content;
 }
 
 body {
@@ -54,7 +54,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 80px;
-    padding: 20px 110px;
+    padding: 20px 50px;
 }
 
 header>.image-wrapper {
@@ -88,7 +88,7 @@ header>img[src*="icon-menu"] {
 .wrapper {
     padding: 10px 50px;
     display: grid;
-    width: 1050px;
+    width: 1440px;
     height: 100vh;
     grid-template-areas: 
     "main-image main-image new-section"
@@ -255,7 +255,7 @@ link3   link-three
 */
 
 
-@media (max-width: 1100px) {
+@media (max-width: 800px) {
     .attribution {
         display: none;
     }
@@ -264,33 +264,42 @@ link3   link-three
         display: grid;
         grid-template-areas: 
         "main-image"
-        "new-section"
         "main-info"
         "about-info"
+        "new-section"
         "link-one" 
         "link-two" 
         "link-three"        
         ;
-        width: 100px;
-        margin-top: 180px;
+        width: 100%;
+        margin-top: 250px;
+        padding: 0px 30px;
     }
 
     .image {
-        background-image: url("../assets/images/image-web-3-mobile.jpg");
+        grid-area: main-image;
+        background-image: url("/news-homepage-main/assets/images/image-web-3-mobile.jpg");
+        height: 200px;
+        align-items: center;
     }
 
-    .info {
+    .info p{
+        padding: 0;
     }
-    .info1{
-
+    .info1 button{
+        margin: 20px 0px 40px 0px;
     }
-
-    .new-info {
+    .link{
+        margin: 0;
+    }
+    header{
+        padding: 45px;
     }
     header>img[src="./assets/images/icon-menu.svg"] {
         display: block;
-        width: 60px;
-        height: 35px;
+        width: 35px;
+        height: 25px;
+        align-items: center;
     }
 
     header>img[src="./assets/images/icon-menu-close.svg"] {
