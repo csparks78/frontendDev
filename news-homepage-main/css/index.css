@@ -264,7 +264,7 @@ header>img[src*="icon-menu"] {
 
     .image {
         grid-area: main-image;
-        background-image: url("../news-homepage-main/assets/images/image-web-3-mobile.jpg");
+        background-image: url("../../news-homepage-main/assets/images/image-web-3-mobile.jpg");
         height: 200px;
         align-items: center;
     }
