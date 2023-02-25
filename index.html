@@ -8,14 +8,25 @@
     <title>Document</title>
     <style>
         body {
-            background-color: black;
-            color: white;
+            background-color: rgb(197, 197, 197);
+            color: rgb(0, 0, 0);
         }
 
         body a {
-            color: white;
+            color: rgb(0, 0, 0);
         }
-
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+        .main img{
+            background-color: white;
+            width: 200px;
+            padding: 1rem;
+            border-radius: 10px;
+        }
         .main li {
             padding: 10px 0px;
         }
@@ -24,6 +35,7 @@
 
 <body>
     <div class="main">
+        <img src="/images/logo-desktop.svg" alt="">
         <h1>Collection of challenges</h1>
         <ul>
             <li><a href="https://csparks78.github.io/frontendDev/results-summary-component-main/">Results Summary
