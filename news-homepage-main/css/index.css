@@ -243,23 +243,10 @@ header>img[src*="icon-menu"] {
     color: hsl(228, 45%, 44%);
 }
 
-
-/* 
-image  main-image
-new-info  new-section
-info    main-info
-info1   about-info
-link1   link-one
-link2   link-two
-link3   link-three
-*/
-
-
 @media (max-width: 800px) {
     .attribution {
         display: none;
     }
-
     .wrapper {
         display: grid;
         grid-template-areas: 
@@ -269,11 +256,10 @@ link3   link-three
         "new-section"
         "link-one" 
         "link-two" 
-        "link-three"        
-        ;
+        "link-three";
         width: 100%;
-        margin-top: 250px;
-        padding: 0px 30px;
+        margin-top: 320px;
+        padding: 3px 20px;
     }
 
     .image {
@@ -310,7 +296,7 @@ link3   link-three
     nav>ul {
         position: fixed;
         height: 100vh;
-        background-color: #2f3640;
+        background-color: var(--Off-white);
         top: 60px;
         right: -100%;
         transition: all 1s ease-out;
@@ -330,6 +316,7 @@ link3   link-three
 
     ul>li a {
         font-size: 20px;
-        color: #f3f3f3;
+        font-weight: 600;
+        color: var(--Dark-grayish-blue);
     }
 }
