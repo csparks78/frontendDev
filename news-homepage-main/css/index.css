@@ -266,6 +266,7 @@ header>img[src*="icon-menu"] {
         grid-area: main-image;
         background-image: url("../../news-homepage-main/assets/images/image-web-3-mobile.jpg");
         height: 200px;
+        width: 250px;
         align-items: center;
     }
 
