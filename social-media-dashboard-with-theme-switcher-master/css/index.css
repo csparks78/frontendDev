@@ -46,7 +46,7 @@ The designs were created to the following widths:
     /* --White */
     --Text2: hsl(0, 0%, 100%);
     /* Toggles */
-    --Toggle: linear-gradient(hsl(208, 92%, 53%), hsl(163, 72%, 41%));
+    --Toggle: linear-gradient(to right, hsl(208, 92%, 53%), hsl(163, 72%, 41%));
     --Toggle-switch: var(--BG);
 }
 
