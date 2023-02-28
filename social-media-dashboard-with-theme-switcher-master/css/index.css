@@ -75,7 +75,7 @@ body {
 }
 
 .wrapper {
-    display: grid;
+    /* display: grid; */
     grid-template-areas:
         'total-followers'
         'followers'
@@ -84,6 +84,10 @@ body {
 }
 
 /* Slider ///////////////////////////// */
+
+.grey-text-color {
+    color: var(--text);
+}
 
 .switch {
     position: relative;
@@ -164,7 +168,7 @@ input:checked+.slider:before {
     padding-right: 10px;
     font-size: 14px;
     font-weight: 600;
-
+    color: var(--Text);
 }
 
 .heading>p {
@@ -177,10 +181,16 @@ input:checked+.slider:before {
     margin: 20px 5px;
     font-size: 14px;
     font-weight: 600;
+    color: var(--Text);
 }
 
 .social-cards {
     margin-top: 40px;
+}
+
+.social-cards p:first-child {
+    color: var(--Text);
+    font-weight: 700;
 }
 
 .social-card {
@@ -192,11 +202,13 @@ input:checked+.slider:before {
     border-radius: 8px;
     background-color: var(--Card-BG);
     margin-bottom: 20px;
+
 }
 
 .social-card>p {
     display: flex;
     align-items: center;
+    color: var(--text);
 }
 
 .social-card p img {
@@ -213,6 +225,7 @@ input:checked+.slider:before {
 .social-card .followers {
     text-transform: uppercase;
     letter-spacing: 3px;
+    color: var(--Text);
 }
 
 .social-card .red {
@@ -247,16 +260,18 @@ input:checked+.slider:before {
 }
 
 /* Overview section */
-.bottom-heading{
+.bottom-heading {
     margin-bottom: 30px;
-
+    color: var(--Text);
 }
-.overview-cards{
-    background-color:var(--Card-BG);
+
+.overview-cards {
+    background-color: var(--Card-BG);
     padding: 15px 20px 15px 20px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
+
 .overview .top {
     display: flex;
     flex-direction: row;
@@ -264,36 +279,47 @@ input:checked+.slider:before {
     align-items: center;
     margin-bottom: 15px;
 }
-.overview .top img{
+
+.overview .top img {
     padding: 10px 0px;
     min-width: 0px;
 }
-.overview .top > p{
+
+.overview .top>p {
+    margin: 0%;
+    color: var(--Text);
+    font-weight: 700;
+}
+
+.overview .bottom>p {
     margin: 0%;
 }
-.overview .bottom > p{
-    margin: 0%;
-}
+
 .overview .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.overview .bottom img{
+
+.overview .bottom img {
     padding: 4px;
 }
-.overview .bottom p:first-child{
+
+.overview .bottom p:first-child {
     font-size: 24px;
     font-weight: 700;
 }
-.overview .bottom p:last-child{
+
+.overview .bottom p:last-child {
     display: flex;
     align-items: center;
 }
-.green-num{
+
+.green-num {
     color: var(--Lime-Green);
 }
-.red-num{
+
+.red-num {
     color: var(--Bright-Red);
 }
 
@@ -304,4 +330,43 @@ input:checked+.slider:before {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width:1000px) {
+    .wrapper {
+        margin: 10px 130px;
+    }
+
+    .heading p:nth-child(2) {
+        margin: 5px;
+    }
+
+    .sliderCont {
+        border-top: 0;
+        justify-content: flex-end;
+        padding: 0%;
+    }
+
+    .social-cards {
+        display: grid;
+        grid-template-areas:
+            "main1 main2 main4 main4";
+        gap: 1.5rem;
+        margin-top: 10px;
+        ;
+    }
+
+    .overview {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-areas:
+            "fb1 fb2 inst1 inst2"
+            "tw1 tw2 you1 you2";
+    }
+
+    .overview-cards {
+        margin: 0;
+        padding: 15px 30px;
+        height: 100px;
+    }
 }
