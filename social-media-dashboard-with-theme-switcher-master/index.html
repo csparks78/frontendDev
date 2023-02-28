@@ -5,101 +5,139 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/index.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
   </style>
 </head>
 
 <body>
+  <div class="wrapper">
+    <div class="heading">
+      <p>Social Media Dashboard</p>
+      <p>Total Followers: 23,004</p>
+      <div class="sliderCont">
+        <p>Dark Mode</p>
+        <label class="switch">
+          <input type="checkbox" onclick="toggleTheme()">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+    <script>
+      // function to set a given theme/color-scheme
+      function setTheme(themeName) {
+        localStorage.setItem('theme', themeName);
+        document.documentElement.className = themeName;
+      }
+      // function to toggle between light and dark theme
+      function toggleTheme() {
+        if (localStorage.getItem('theme') === 'theme-dark') {
+          setTheme('theme-light');
+        } else {
+          setTheme('theme-dark');
+        }
+      }
+      // Immediately invoked function to set the theme on initial load
+      (function () {
+        if (localStorage.getItem('theme') === 'theme-dark') {
+          setTheme('theme-dark');
+        } else {
+          setTheme('theme-light');
+        }
+      })();
+    </script>
 
-  <p>Social Media Dashboard</p>
-  Total Followers: 23,004</p>
-<div class="sliderCont"><p>Dark Mode</p>
-  <label class="switch">
-    <input type="checkbox" onclick="myFunction()">
-    <span class="slider round"></span>
-  </label>
-</div>
-  <script>
-    function myFunction() {
-      var element = document.body;
-      element.classList.toggle("dark-mode");
-    }
-  </script>
+    <div class="social-cards">
+      <div class="social-card">
+        <p><img src="images/icon-facebook.svg">@nathanf</p>
+        <p class="number"> 1987</p>
+        <p class="followers">Followers</p>
+        <p class="green"><img src="images/icon-up.svg">12 Today</p>
+      </div>
 
+      <div class="social-card">
+        <p><img src="images/icon-twitter.svg">@nathanf</p>
+        <p class="number"> 1044</p>
+        <p class="followers">Followers</p>
+        <p class="green"><img src="images/icon-up.svg">99 Today</p>
+      </div>
 
-  <p>@nathanf
-    1987
-    Followers
-    12 Today</p>
+      <div class="social-card">
+        <p><img src="images/icon-instagram.svg">@realnathanf</p>
+        <p class="number"> 11k</p>
+        <p class="followers">Followers</p>
+        <p class="green"><img src="images/icon-up.svg">1099 Today</p>
+      </div>
 
-  <p>@nathanf
-    1044
-    Followers
-    99 Today</p>
+      <div class="social-card">
+        <p><img src="images/icon-youtube.svg">@Nathan F.</p>
+        <p class="number">8239</p>
+        <p class="followers">Subscribers</p>
+        <p class="red"><img src="images/icon-down.svg">144 Today</p>
+      </div>
+    </div>
+    <div class="overview">
+      <div class="heading bottom-heading">
+        <p>Overview - Today</p>
+      </div>
+      <div class="overview-cards">
+        <div class="top">
+          <p>Page Views</p>
+          <img src="images/icon-facebook.svg">
+        </div>
+        <div class="bottom">
+          <p>87</p>
+          <p class="green-num"><img src="images/icon-up.svg">3%</p>
+        </div>
+      </div>
 
-  <p>@realnathanf
-    11k
-    Followers
-    1099 Today</p>
+      <div class="overview-cards">
+        <div class="top">
+          <p>Likes</p>
+          <img src="images/icon-facebook.svg">
+        </div>
+        <div class="bottom">
+          <p>52</p>
+          <p class="red-num"><img src="images/icon-down.svg">2%</p>
+        </div>
+      </div>
+      
+      
+      
 
-  <p>Nathan F.
-    8239
-    Subscribers
-    144 Today</p>
+      Likes
+      5462
+      2257%
 
+      Profile Views
+      52k
+      1375%
 
+      Retweets
+      117
+      303%
 
-  <p>Overview - Today
+      Likes
+      507
+      553%
 
-    Page Views
-    87
-    3%
+      Likes
+      107
+      19%
 
-    Likes
-    52
-    2%
-
-    Likes
-    5462
-    2257%
-
-    Profile Views
-    52k
-    1375%
-
-    Retweets
-    117
-    303%
-
-    Likes
-    507
-    553%
-
-    Likes
-    107
-    19%
-
-    Total Views
-    1407
-    12%</p>
-
+      Total Views
+      1407
+      12%</p>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.sparks3d.com" target="_blank">Cliff Sparks</a>.
   </div>
 </body>
 
