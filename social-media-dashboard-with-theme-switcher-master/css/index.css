@@ -37,6 +37,7 @@ The designs were created to the following widths:
     /* #### Dark Theme */
     /* --Very-Dark-Blue */
     --BG: hsl(230, 17%, 14%);
+    --BG2: hsl(229, 18%, 29%);
     /* --Very-Dark-Blue */
     --Top-BG-pattern: hsl(232, 19%, 15%);
     /* --Dark-Desaturated-Blue */
@@ -54,6 +55,7 @@ The designs were created to the following widths:
     /* #### Light Theme */
     /* --White */
     --BG: hsl(0, 0%, 100%);
+    --BG2: hsl(229, 22%, 85%);
     /* --Very-Pale-Blue */
     --Top-BG-pattern: hsl(225, 100%, 98%);
     /* --Light-Grayish-Blue */
@@ -130,10 +132,6 @@ input:checked+.slider {
     background: var(--Toggle);
 }
 
-input:focus+.slider {
-    /* box-shadow: 0 0 1px #2196F3; */
-}
-
 input:checked+.slider:before {
     background: var(--Toggle-switch);
     -webkit-transform: translateX(26px);
@@ -205,7 +203,12 @@ input:checked+.slider:before {
 
 }
 
-.social-card>p {
+.overview-cards:hover,
+.social-card:hover {
+    background-color: var( --BG2);
+}
+
+.social-card > p {
     display: flex;
     align-items: center;
     color: var(--text);
@@ -220,6 +223,7 @@ input:checked+.slider:before {
     font-size: 45px;
     font-weight: 700;
     margin: 0;
+    color: var(--Text2);
 }
 
 .social-card .followers {
