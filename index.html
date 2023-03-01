@@ -21,7 +21,7 @@
 
         body a {
             color: rgb(0, 0, 0);
-            
+
         }
 
         .main {
@@ -38,12 +38,13 @@
         }
 
         .main img {
-           background-color: white;
+            background-color: white;
             width: 800px;
             border-radius: 10px;
             opacity: 1;
-           border: 5px solid black;
-           margin: 10px;
+            border: 5px solid black;
+            margin: 10px;
+            padding: 10px;
         }
 
         .main li,
@@ -53,9 +54,17 @@
             list-style-type: none;
 
         }
-       ul{
-        padding: 0;
-       }
+
+        ul {
+            padding: 0;
+        }
+
+        .wrapper {
+            border: 2px solid rgb(0, 0, 0);
+            padding: 40px;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+        }
 
         .challenges {
             display: flex;
@@ -71,29 +80,27 @@
             padding: 0;
             margin: 10px;
         }
-        .wrapper{
-            border: 2px solid rgb(0, 0, 0);
-            padding: 40px;
-            border-radius: 20px;
-            background-color: rgb(255, 255, 255);
-        }
-        @media screen and (max-width: 800px){
-            .challenges{
+
+        @media screen and (max-width: 800px) {
+            .challenges {
                 flex-direction: column;
-               
+
             }
-            .main img{
+
+            .main img {
                 width: 300px;
                 border-width: 1px;
                 padding: 5px;
             }
-            .main p{
+
+            .main p {
                 width: 0 auto;
                 display: flex;
                 font-size: 25px;
             }
-            .challenges{
-            width: 300px;
+
+            .challenges {
+                width: 300px;
             }
         }
     </style>
@@ -105,22 +112,28 @@
         <p>Collection of challenges</p>
         <ul>
             <div class="wrapper">
-            <div class="challenges">
-                <a href="https://csparks78.github.io/frontendDev/results-summary-component-main/">
-                <img src="results-summary-component-main/assets/images/challenge.PNG"></a>
-                <li><a href="https://github.com/csparks78/frontendDev/tree/main/social-media-dashboard-with-theme-switcher-master">Results Summary - GitHub</li></a>
+                <div class="challenges">
+                    <a href="https://csparks78.github.io/frontendDev/results-summary-component-main/">
+                        <img src="results-summary-component-main/assets/images/challenge.PNG"></a>
+                    <li><a
+                            href="https://github.com/csparks78/frontendDev/tree/main/social-media-dashboard-with-theme-switcher-master">Results
+                            Summary - GitHub</li></a>
+                </div>
+                <div class="challenges">
+                    <a href="https://csparks78.github.io/frontendDev/news-homepage-main/">
+                        <img src="news-homepage-main\assets\images\fullScreen.PNG"></a>
+                    <li><a href="https://github.com/csparks78/frontendDev/tree/main/news-homepage-main">News Homepage -
+                            Github</li></a>
+                </div>
+                <div class="challenges">
+                    <a
+                        href="https://csparks78.github.io/frontendDev/social-media-dashboard-with-theme-switcher-master/">
+                        <img src="social-media-dashboard-with-theme-switcher-master/design/DesktopDark.PNG"></a>
+                    <li><a
+                            href="https://github.com/csparks78/frontendDev/tree/main/social-media-dashboard-with-theme-switcher-master">Social
+                            Media - GitHub</li></a>
+                </div>
             </div>
-            <div class="challenges">
-                <a href="https://csparks78.github.io/frontendDev/news-homepage-main/">
-                <img src="news-homepage-main\assets\images\fullScreen.PNG"></a>
-                <li><a href="https://github.com/csparks78/frontendDev/tree/main/news-homepage-main">News Homepage - Github</li></a>  
-            </div>
-            <div class="challenges">
-                <a  href="https://csparks78.github.io/frontendDev/social-media-dashboard-with-theme-switcher-master/">
-                <img src="social-media-dashboard-with-theme-switcher-master/design/DesktopDark.PNG"></a>
-                <li><a href="https://github.com/csparks78/frontendDev/tree/main/social-media-dashboard-with-theme-switcher-master">Social Media - GitHub</li></a>
-            </div>
-        </div>
         </ul>
     </div>
 </body>
