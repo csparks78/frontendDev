@@ -13,6 +13,10 @@
     <title>Sparks Frontend Mentor</title>
     <style>
         body {
+            background-image: url('images/background.PNG');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
             font-family: 'Roboto', sans-serif;
             background-color: rgb(197, 197, 197);
             color: rgb(0, 0, 0);
@@ -39,7 +43,7 @@
 
         .main img {
             background-color: white;
-            width: 800px;
+            width: 400px;
             border-radius: 10px;
             opacity: 1;
             border: 5px solid black;
@@ -63,7 +67,17 @@
             border: 2px solid rgb(0, 0, 0);
             padding: 40px;
             border-radius: 20px;
+            width: 600px;
             background-color: rgb(255, 255, 255);
+            margin: 0 auto;
+        }
+
+        .wrapper a {
+            display: flex;
+            justify-content: center;
+        }
+        .wrapper p{
+            text-align: center;
         }
 
         .challenges {
@@ -81,10 +95,16 @@
             margin: 10px;
         }
 
+        .background {
+            z-index: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+
         @media screen and (max-width: 800px) {
             .challenges {
                 flex-direction: column;
-
+              
             }
 
             .main img {
@@ -95,23 +115,20 @@
 
             .main p {
                 width: 0 auto;
-                display: flex;
+                /*display: flex;*/
                 font-size: 25px;
             }
 
-            .challenges {
-                width: 300px;
-            }
         }
     </style>
 </head>
 
 <body>
     <div class="main">
-        <a href="https://www.frontendmentor.io/"><img src="images/logo-desktop.svg" alt=""></a>
-        <p>Collection of challenges</p>
         <ul>
             <div class="wrapper">
+                <a href="https://www.frontendmentor.io/"><img src="images/logo-desktop.svg" alt=""></a>
+                <p>Collection of challenges</p>
                 <div class="challenges">
                     <a href="https://csparks78.github.io/frontendDev/results-summary-component-main/">
                         <img src="results-summary-component-main/assets/images/challenge.PNG"></a>
