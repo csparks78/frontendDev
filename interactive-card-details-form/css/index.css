@@ -1,0 +1,42 @@
+
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-grayish-violet: hsl(270, 3%, 87%);
+--Dark-grayish-violet: hsl(279, 6%, 55%);
+--Very-dark-violet: hsl(278, 68%, 11%);
+
+}
+
+
+
+*{
+margin: 0;
+}
+body{
+}
+.wrapper{
+    z-index: 2;
+}
+.wrapper img{
+    
+    position: absolute;
+    z-index: -2;
+}
+#card-front{
+    position: relative;
+top: 150px;
+left: 125px;
+z-index: -1;
+}
+#card-back{
+    top: 400px;
+left: 255px;
+}
+.card-front > img{
+    top: 180px;
+left: 150px;
+z-index: 2;
+}
+.content{
+
+}
