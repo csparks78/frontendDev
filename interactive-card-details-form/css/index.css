@@ -31,12 +31,85 @@ z-index: -1;
 #card-back{
     top: 400px;
 left: 255px;
+z-index: -1;
 }
 .card-front > img{
     top: 180px;
 left: 150px;
 z-index: 2;
 }
+.card-num p{
+    z-index: 5;
+}
+.customer-info{
+    
+}
 .content{
+margin-left: 55%;
+margin-right: 5%;
+}
+/* .expDate > *{
+    display: inline-flex;
+    flex: 0 0   auto;
+} */
+/* ////////////////////////////////////////// */
+.form-container .field-container:first-of-type {
+    grid-area: name;
+}
 
+.form-container .field-container:nth-of-type(2) {
+    grid-area: number;
+}
+
+.form-container .field-container:nth-of-type(3) {
+    grid-area: expiration1;
+}
+.form-container .field-container:nth-of-type(3) {
+    grid-area: expiration2;
+}
+.form-container .field-container:nth-of-type(4) {
+    grid-area: security;
+}
+
+.field-container input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.field-container {
+    position: relative;
+}
+.form-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: 
+    "name name name"
+    "number number number"
+    "expiration1 expiration2 security";
+    max-width: 500px;
+    padding: 20px;
+    color: #707070;
+}
+
+.ccicon {
+    height: 38px;
+    position: absolute;
+    right: 6px;
+    top: calc(50% - 17px);
+    width: 60px;
+}
+label {
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
+input {
+    margin-top: 3px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
 }
