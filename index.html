@@ -71,14 +71,15 @@
             background-color: rgb(255, 255, 255);
             /*margin: 0 auto;*/
             box-shadow: 15px 15px 25px 5px rgba(32, 7, 196, 0.498);
-
+            text-align: center;
         }
 
         .wrapper a {
             display: flex;
             justify-content: center;
         }
-        .wrapper p{
+
+        .wrapper p {
             text-align: center;
         }
 
@@ -103,9 +104,22 @@
             height: 100vh;
         }
 
+        .sparks3d button {
+            margin-top: 20px;
+            padding: 5px 80px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: 700;
+            background-color: rgba(32, 7, 196, 0.25);
+        }
+        button:hover{
+            box-shadow: 5px 5px 15px 5px rgba(32, 7, 196, 0.45);
+            background-color: rgba(32, 7, 196, 0.20);
+        }
+
         @media screen and (max-width: 800px) {
             .challenges {
-                flex-direction: column;              
+                flex-direction: column;
             }
 
             main img {
@@ -117,10 +131,11 @@
             main p {
                 font-size: 25px;
             }
-            .wrapper{
+
+            .wrapper {
                 border: none;
             }
-            
+
         }
     </style>
 </head>
@@ -151,6 +166,9 @@
                     <li><a
                             href="https://github.com/csparks78/frontendDev/tree/main/social-media-dashboard-with-theme-switcher-master">Social
                             Media - GitHub</li></a>
+                </div>
+                <div class="sparks3d">
+                    <button onclick="window.location.href = 'https://sparks3d.com/';">Sparks3D</button>
                 </div>
             </div>
         </ul>
